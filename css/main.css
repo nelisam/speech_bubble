@@ -1,24 +1,26 @@
 
 
 .big-box {
-    background-color: red;
-    width: 200px;
-    height: 300px;
+    background: red;
+    width: 400px;
+    height: 200px;
     border-radius: 10%;
     position: absolute;
     top: 50%;
     left: 50%;
+    position: absolute;
     transform: translate(-50%,-50%);
 
     } 
 
-.big-box :before{
-
+.big-box:before{
+    content:"";
+    position: absolute;
     width: 0;
     height: 0;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
-    border-right: 50px solid #000000;
-    position: absolute;
-
-    }
+    border-right: 50px solid red;
+    margin: 25px 0 0 -25px;
+        
+        }
